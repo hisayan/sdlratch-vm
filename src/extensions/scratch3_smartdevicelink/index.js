@@ -109,17 +109,17 @@ class Scratch3Smartdevicelink {
             name: 'SDL',
             blockIconURI: blockIconURI,
             blocks: [
-                {
-                    opcode: 'writeLog',
-                    blockType: BlockType.COMMAND,
-                    text: 'console.log [TEXT]',
-                    arguments: {
-                        TEXT: {
-                            type: ArgumentType.STRING,
-                            defaultValue: "hello"
-                        }
-                    }
-                },
+                // {
+                //     opcode: 'writeLog',
+                //     blockType: BlockType.COMMAND,
+                //     text: 'console.log [TEXT]',
+                //     arguments: {
+                //         TEXT: {
+                //             type: ArgumentType.STRING,
+                //             defaultValue: "hello"
+                //         }
+                //     }
+                // },
                 {
                     opcode: 'reporter1',
                     blockType: BlockType.REPORTER,
@@ -128,7 +128,7 @@ class Scratch3Smartdevicelink {
                         VEHICLE_DATA: {
                             type: ArgumentType.STRING,
                             menu: 'vehicleData',
-                            defaultValue: VehicleDataMenu.TURN_SINGNAL
+                            defaultValue: VehicleDataMenu.SPEED
                         }
                     }
                 },
@@ -140,7 +140,7 @@ class Scratch3Smartdevicelink {
                         VEHICLE_DATA: {
                             type: ArgumentType.STRING,
                             menu: 'vehicleData',
-                            defaultValue: VehicleDataMenu.TURN_SINGNAL
+                            defaultValue: VehicleDataMenu.SPEED
                         }
                     }
                 }
